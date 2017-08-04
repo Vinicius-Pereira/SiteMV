@@ -332,6 +332,15 @@
     background-image: none !important;
   }
 
+  #code-otimus{
+    background-image: none !important;
+  }
+
+  #code-master{
+    background-image: none !important;
+  }
+
+
   /*Pricing Table*/
   .single-price, .single-table {
     margin-bottom: 45px;
