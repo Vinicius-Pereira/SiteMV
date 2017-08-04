@@ -797,6 +797,10 @@ ul.sub-menu {
   background-position: 151px 4px;
 }
 
+.help{
+  background-image: url(../images/services/help_icon.png) !important;
+}
+
 .about-image {
   padding:90px 90px 0;
 }

@@ -328,6 +328,10 @@
     background-image: none;
   }
 
+  .help{
+    background-image: none !important;
+  }
+
   /*Pricing Table*/
   .single-price, .single-table {
     margin-bottom: 45px;
