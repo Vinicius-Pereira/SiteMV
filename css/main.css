@@ -797,6 +797,18 @@ ul.sub-menu {
   background-position: 151px 4px;
 }
 
+.help{
+  background-image: url(../images/services/help_icon.png) !important;
+}
+
+#code-otimus{
+  background-image: url(../images/obter-cod/code_icon_1.png) !important;
+}
+
+#code-master{
+  background-image: url(../images/obter-cod/code_icon_2.png) !important;
+}
+
 .about-image {
   padding:90px 90px 0;
 }
