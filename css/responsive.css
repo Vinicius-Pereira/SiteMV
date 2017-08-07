@@ -642,6 +642,7 @@
 
   #map-section .contact-info {
     width: 100%;
+    display: none;
   }
 
   #gmap {
@@ -667,6 +668,8 @@
     padding: 12px 11px;
   }
 }
+
+
 
 .parceiros{
   text-align: center;
