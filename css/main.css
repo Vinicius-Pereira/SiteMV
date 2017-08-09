@@ -856,3 +856,9 @@ ul.sub-menu {
   padding-left: 40px;
 }
 
+#clients{
+  margin-bottom: 30px;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
