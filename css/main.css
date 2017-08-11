@@ -865,3 +865,18 @@ ul.sub-menu {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
+/*Features*/
+.feature-inner{
+  text-align: center;
+}
+.icon-wrapper{
+  display: inline-block;
+  background-color: #4FCCCD;
+  color: #fff;
+  padding: 25px;
+  box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;
+  -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;
+  border-radius: 100%;
+  margin: 10px 0;
+}
