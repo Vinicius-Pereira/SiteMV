@@ -328,6 +328,11 @@
 
 @media only screen and (max-width : 480px) {
 
+#map-section .contact-info{
+  width: 100%;
+  display:none;
+}
+
 .parceiros{
   text-align: center;
 }
