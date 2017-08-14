@@ -57,7 +57,7 @@ jQuery(function($) {'use strict';
 		options = $.extend({}, options || {}, $this.data('countToOptions') || {});
 		$this.countTo(options);
 	}
-		
+
 	// Search
 	$('.fa-search').on('click', function() {
 		$('.field-toggle').fadeToggle(200);
@@ -68,15 +68,23 @@ jQuery(function($) {'use strict';
 	form.submit(function(event){
 		event.preventDefault();
 		var form_status = $('<div class="form_status"></div>');
+		var form_data = $(this).serialize();
+		var form_url = "sendemail.php";
+		var form_method = $(this).attr("method").toUpperCase();
 		$.ajax({
-			url: $(this).attr('action'),
+			url: form_url, 
+			type: form_method,      
+			data: form_data,     
+			cache: false, 
 			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
-			}
-		}).done(function(data){
-			form_status.html('<p class="text-success">Obrigado pela sua mensagem. Retornaremos o mais rápido possível.</p>').delay(3000).fadeOut();
-		});
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Enviando e-mail...</p>').fadeIn() );
+			},
+			success: function(){ 
+				form_status.html('<p class="text-success">Obrigado pela sua mensagem. Retornaremos o mais rápido possível.</p>').delay(3000).fadeOut();
+			}           
+		})
 	});
+
 
 	// Progress Bar
 	$.each($('div.progress-bar'),function(){
